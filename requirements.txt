@@ -1,4 +1,3 @@
-os
 io
 oauth2client
 argparse
