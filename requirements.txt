@@ -1,8 +1,9 @@
-httplib2
 os
 io
-apiclient
 oauth2client
 argparse
 praw
 urllib
+google-api-python-client
+google-auth-httplib2 
+google-auth-oauthlib
