@@ -1,4 +1,3 @@
-__future__
 httplib2
 os
 io
