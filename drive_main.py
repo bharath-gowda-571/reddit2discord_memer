@@ -72,13 +72,19 @@ def searchFile(size,query):
     pageSize=size,fields="nextPageToken, files(id, name, kind, mimeType)",q=query).execute()
     items = results.get('files', [])
     if not items:
-        print('No files found.')
+        return False
     else:
         print('Files:')
         for item in items:
             print(item)
             print('{0} ({1})'.format(item['name'], item['id']))
+            return(item["id"])
 #uploadFile('unnamed.jpg','unnamed.jpg','image/jpeg')
 #downloadFile('1Knxs5kRAMnoH5fivGeNsdrj_SIgLiqzV','google.jpg')
 #createFolder('Google')
-# searchFile(10,"name contains 'Getting'")
+def deleteFile(file_id):
+    drive_service.files().delete(fileId=file_id).execute()
+
+# print(searchFile(10,"name contains 'meme'"))
+
+# deleteFile("1JqhNjkBsF-cls0UOAQtgcgTHg6yTcuvm")
