@@ -23,12 +23,12 @@ def get_hot_memes():
 			# downloads the image
 			urllib.request.urlretrieve(submission.url,file_name)
 			# uploads it to google drive 
-			uploadFile(file_name,file_name,"image/png",folder_id)
+			# uploadFile(file_name,file_name,"image/png",folder_id)
 			lis_of_memes.append((str(submission),submission.url,file_name))
 
 		elif submission.url.endswith(".jpg"):
 			urllib.request.urlretrieve(submission.url,file_name)
-			uploadFile(file_name,file_name,"image/jpeg",folder_id)
+			# uploadFile(file_name,file_name,"image/jpeg",folder_id)
 			lis_of_memes.append((str(submission),submission.url,file_name))
 
 	return lis_of_memes
