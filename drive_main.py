@@ -85,6 +85,6 @@ def searchFile(size,query):
 def deleteFile(file_id):
     drive_service.files().delete(fileId=file_id).execute()
 
-print(searchFile(10,"name contains 'meme_database.db'"))
+# print(searchFile(10,"name contains 'meme_database.db'"))
 
 # deleteFile("1JqhNjkBsF-cls0UOAQtgcgTHg6yTcuvm")
