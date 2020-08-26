@@ -38,8 +38,7 @@ async def main():
             continue
         for j in channel_ids:
             await bot.get_channel(j).send(file=discord.File(i[2]))
-            tweet_image(i[2])
-            
+        tweet_image(i[2],"*open to view the entire meme*")
         c.execute("INSERT INTO memes VALUES (?,?,?)",i)
     conn.commit()
     conn.close()
