@@ -8,7 +8,7 @@ from drive_main import uploadFile,downloadFile,searchFile,deleteFile
 from reddit import get_hot_memes
 from twitter import tweet_image
 
-TOKEN = "NzQzMDYwMzIxMzg3Njc1NzM4.XzPK2g.kfn1m_qwftwXIBlEENqjRa_VM5Q"
+TOKEN = "*****token here*****"
 
 bot = commands.Bot("!")
 bot=discord.Client()
