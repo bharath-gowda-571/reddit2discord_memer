@@ -6,8 +6,8 @@ from drive_main import uploadFile
 folder_id="1lytmkGRIOCrJu2L-K1QtYoLMiW-fKZrd"
 
 reddit=praw.Reddit(user_agent="u/BestBotEver07",
-					client_id="iTOCEsn4WdxSqA",client_secret="qWR0vD-DoXBtMNnVtaWh0wtuud0",
-					username="BestBotEver07",password="anything")
+					client_id="****id****",client_secret="******secret*******",
+					username="****username*****",password="****password****")
 
 subreddit=reddit.subreddit("memes+meme+wholesomememes")
 
